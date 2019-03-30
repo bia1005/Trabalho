@@ -11,27 +11,8 @@ public class FolhaPagamento {
 			this.depend = depend;
 		}
 		
-		public double getHoraTrabalhada() {
-			return horaTrabalhada;
-		}
-		public void setHoraTrabalhada(double horaTrabalhada) {
-			this.horaTrabalhada = horaTrabalhada;
-		}
-		public double getsalHora() {
-			return salHora;
-		}
-		public void setdepend(double salHora) {
-			this.salHora = salHora;
-		}
-		public int getdepend() {
-			return depend;
-		}
-		public void setHoraTrabalhada(int depend) {
-			this.depend = depend;
-		}
-		
 		public double salBruto () {
-			return getHoraTrabalhada() * getsalHora() +(50* getdepend());
+			return horaTrabalhada * salHora +(50* depend);
 				
 		}
 		double descInss () {
